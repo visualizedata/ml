@@ -1,7 +1,7 @@
 import pandas as pd
 
 class BinaryClassificationPerformance():
-    '''Performance measures to evaluate the fit of a binary classification model, v1.0'''
+    '''Performance measures to evaluate the fit of a binary classification model, v1.01'''
     
     def __init__(self, predictions, labels, desc, probabilities=None):
         '''Initialize attributes: predictions-vector of predicted values for Y, labels-vector of labels for Y'''
@@ -24,6 +24,7 @@ class BinaryClassificationPerformance():
         self.performance_measures['Accuracy'] = (self.performance_measures['TP'] + self.performance_measures['TN']) / (self.performance_measures['Pos'] + self.performance_measures['Neg'])
         self.performance_measures['Precision'] = self.performance_measures['TP'] / (self.performance_measures['TP'] + self.performance_measures['FP'])
         self.performance_measures['Recall'] = self.performance_measures['TP'] / self.performance_measures['Pos']
+        self.performance_measures['desc'] = self.desc
 
     def img_indices(self):
         '''Get the indices of true and false positives to be able to locate the corresponding images in a list of image names'''
