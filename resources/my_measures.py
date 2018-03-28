@@ -1,7 +1,8 @@
 import pandas as pd
+import numpy as np
 
 class BinaryClassificationPerformance():
-    '''Performance measures to evaluate the fit of a binary classification model, v1.01'''
+    '''Performance measures to evaluate the fit of a binary classification model, v1.02, updated March 27'''
     
     def __init__(self, predictions, labels, desc, probabilities=None):
         '''Initialize attributes: predictions-vector of predicted values for Y, labels-vector of labels for Y'''
@@ -30,5 +31,7 @@ class BinaryClassificationPerformance():
         '''Get the indices of true and false positives to be able to locate the corresponding images in a list of image names'''
         self.performance_df['tp_ind'] = ((self.performance_df['preds'] == True) & (self.performance_df['labls'] == True))
         self.performance_df['fp_ind'] = ((self.performance_df['preds'] == True) & (self.performance_df['labls'] == False))
+        self.performance_df['fn_ind'] = ((self.performance_df['preds'] == False) & (self.performance_df['labls'] == True))
         self.image_indices['TP_indices'] = np.where(self.performance_df['tp_ind']==True)[0].tolist()
         self.image_indices['FP_indices'] = np.where(self.performance_df['fp_ind']==True)[0].tolist()
+        self.image_indices['FN_indices'] = np.where(self.performance_df['fn_ind']==True)[0].tolist()
