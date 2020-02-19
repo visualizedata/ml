@@ -14,3 +14,17 @@ What is "machine learning?" See our definitions [here](https://github.com/visual
 
 [Getting to know Python](https://github.com/visualizedata/ml/blob/master/week01/intro_python.ipynb) (.ipynb)
 
+
+
+Antonie Dreyer
+Chyelle
+D'hana Perry
+Jeharrah Pearl
+Marisa Asari
+Neena Cho
+Neil Oliver
+Robin Coenen
+Saetbyeol Kwon
+Saloni Naishad Shah
+Sohee Cho
+Xingyang Cai
