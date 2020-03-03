@@ -1,13 +1,13 @@
 import pandas as pd
 
 class BinaryClassificationPerformance():
-    '''Performance measures to evaluate the fit of a binary classification model, v1.01'''
+    '''Performance measures to evaluate the fit of a binary classification model, v1.02'''
     
     def __init__(self, predictions, labels, desc, probabilities=None):
         '''Initialize attributes: predictions-vector of predicted values for Y, labels-vector of labels for Y'''
         '''probabilities-optional, probability that Y is equal to True'''
         self.probabilities = probabilities
-        self.performance_df = pd.concat([pd.DataFrame(predictions), pd.DataFrame(labels)], axis=1)
+        self.performance_df = pd.concat([pd.DataFrame(predictions), pd.DataFrame(labels).reset_index(drop=True)], axis=1, ignore_index=True)
         self.performance_df.columns = ['preds', 'labls']
         self.desc = desc
         self.performance_measures = {}
@@ -16,7 +16,7 @@ class BinaryClassificationPerformance():
     def compute_measures(self):
         '''Compute performance measures defined by Flach p. 57'''
         self.performance_measures['Pos'] = self.performance_df['labls'].sum()
-        self.performance_measures['Neg'] = self.performance_df.shape[0] - self.performance_df['labls'].sum()
+        self.performance_measures['Neg'] = self.performance_df['labls'].shape[0] - self.performance_df['labls'].sum()
         self.performance_measures['TP'] = ((self.performance_df['preds'] == True) & (self.performance_df['labls'] == True)).sum()
         self.performance_measures['TN'] = ((self.performance_df['preds'] == False) & (self.performance_df['labls'] == False)).sum()
         self.performance_measures['FP'] = ((self.performance_df['preds'] == True) & (self.performance_df['labls'] == False)).sum()
