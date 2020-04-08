@@ -3,7 +3,7 @@
 ## Due dates:
 
 * Iteration 1: April 21, 11pm  
-* Final: May 5, 11pm  
+* Final: Monday, May 4 at 11:59pm
 
 ## Assignment description 
 
