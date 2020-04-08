@@ -1,0 +1,31 @@
+column_name,description,measurement
+s_no,corresponds with the image name,"image name= s_no + ""_small.jpg"""
+artist,name of artist,string
+title,title of work,string
+art_movement,name of art movement,string
+museum_venue,location of work,string
+country_of_origin,country of work,string
+has_text,indicator that the work contains text,=TRUE if contains TEXT
+primary_medium,broad description of medium,string
+medium,detailed description of medium,string
+work_size,dimensions/size of original work (NOT the size of this image),string
+date,date/year of work creation,string
+representation,indicates the work represents some aspect of reality,=TRUE if the work is *very* representational
+representation_semi,indicates the work represents some aspect of reality,=TRUE if the work is *somewhat* representational
+kinetic,indicates the work moves or has movement,=TRUE if the work is kinetic
+map,indicates the work is a map,=TRUE if work is an explicit map
+map2,indicates the work is a map,"=TRUE if work is a map, though not explicitly"
+spatial_dimension,indicates the work is an object that is occupying physical space in more than 2 dimensions (height in addition to length and width),=TRUE if work is the work is strongly spatial
+spatial_dimension2,indicates the work is an object that is occupying physical space in more than 2 dimensions (height in addition to length and width),=TRUE if work is the work is somewhat spatial
+pl,given location on the planar dimensions,"=5 if this image contains a very strong use of this attribute, =4 if strong presence, =3 if somewhat strong, =2 if somewhat weak, =1 if weak, =0 if little/no presence"
+si,"variations in height, width, area","=5 if this image contains a very strong use of this attribute, =4 if strong presence, =3 if somewhat strong, =2 if somewhat weak, =1 if weak, =0 if little/no presence"
+va,the various degrees between white and black,"=5 if this image contains a very strong use of this attribute, =4 if strong presence, =3 if somewhat strong, =2 if somewhat weak, =1 if weak, =0 if little/no presence"
+te,variation in the fineness or coarseness of an area having a given value; includes blur,"=5 if this image contains a very strong use of this attribute, =4 if strong presence, =3 if somewhat strong, =2 if somewhat weak, =1 if weak, =0 if little/no presence"
+co,"hue, using the repertoire of colored sensations which can be produced at equal value","=5 if this image contains a very strong use of this attribute, =4 if strong presence, =3 if somewhat strong, =2 if somewhat weak, =1 if weak, =0 if little/no presence"
+or,"various orientations, ranging from the vertical to the horizontal in a distinct direction","=5 if this image contains a very strong use of this attribute, =4 if strong presence, =3 if somewhat strong, =2 if somewhat weak, =1 if weak, =0 if little/no presence"
+sh,a mark with a constant size can nonetheless have an infinite number of different shapes,"=5 if this image contains a very strong use of this attribute, =4 if strong presence, =3 if somewhat strong, =2 if somewhat weak, =1 if weak, =0 if little/no presence"
+reflection,"indicates the work contains an image given back by a reflecting surface, or an image seen in a mirror or shiny surface",=TRUE if work contains a reflection
+po,A POINT represents a location on the plane that has no theoretical length or area. This signification is independent of the size and character of the mark which renders it visible. ,"=5 if this image contains a very strong use of this mark, =4 if strong presence, =3 if somewhat strong, =2 if somewhat weak, =1 if weak, =0 if little/no presence"
+li,A LINE signifies a phenomenon on the plane which has measurable length but no area. This signification is independent of the width and characteristics of the mark which renders it visible.,"=5 if this image contains a very strong use of this mark, =4 if strong presence, =3 if somewhat strong, =2 if somewhat weak, =1 if weak, =0 if little/no presence"
+ar,An AREA signifies something on the plane that has a measurable size. This signification applies to the entire area covered by the visible mark.,"=5 if this image contains a very strong use of this mark, =4 if strong presence, =3 if somewhat strong, =2 if somewhat weak, =1 if weak, =0 if little/no presence"
+notes,"notes, description",string
