@@ -2,7 +2,7 @@
 
 ### Reflections
 
-In this class meeting, in small groups (~4 people each), you will reflect on your work this semester through an assigned lens: 
+In this class meeting, in small groups (~4 people each), you will reflect on your work this semester through an assigned lens. [[guidance](https://docs.google.com/document/d/1WUFFBOXcr6Bm1fbtZQX5q0Yuzu8X-VV8dHpEUdvMx3o/edit?usp=sharing)] 
 
 ### Group 1
 
