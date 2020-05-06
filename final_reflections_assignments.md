@@ -38,4 +38,4 @@ Group members: Antonie, Emi, Luella, and Sarah
 
 Topic: case study: the role machine learning has played in the world's response to COVID-19. This should include the ambitions, successes, and failures at using machine learning to help in the worldwide response to the pandemic. 
 
-Group members: D'hana, Shea, Yiran and Zach
+Group members: D'hana, Shea, and Yiran
