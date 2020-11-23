@@ -1,10 +1,5 @@
 # starter code and guidance for ML assignment 3, option 3
 
-## Due dates:
-
-* Iteration 1: April 21, 11pm  
-* Final: Monday, May 4 at 11:59pm
-
 ## Assignment description 
 
 You are going to use [KMeans](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) to cluster data on 6,104 food recalls (because of food poisoning outbreaks) **on text describing the reason (specific food items) for the recall.** The measure of success is subjective; you know you have chosen the right features and number of clusters when the food items each cluster "seem" like they belong together. 
@@ -19,7 +14,7 @@ However, this does not allow for summarization by broader category (e.g., "meats
 
 #### Starter code
 
-A [starter Jupyter notebook](https://github.com/visualizedata/ml/blob/master/ML_assignment_3/option_3/starter_code.ipynb) is included to give you a jump start on:  
+A [starter Jupyter notebook](https://github.com/visualizedata/ml/blob/master/final_assignment_3/option_3/starter_code.ipynb) is included to give you a jump start on:  
 
 * reading the metadata  
 * subsetting features from the full set of metadata  
